@@ -23,9 +23,6 @@
 /** 以前需要展示的数据 */
 @property (nonatomic, strong) NSMutableArray<LTMenuItem *> *oldShowMenuItems;
 
-/** 已经选中的选项, 用于回调 */
-@property (nonatomic, strong) NSMutableArray<LTMenuItem *> *selectedMenuItems;
-
 /** 全选按钮 */
 @property (nonatomic, strong) UIButton *allBtn;
 
@@ -57,22 +54,6 @@ static NSString *LTMenuItemId = @"LTMenuItemCell";
         self.latestShowMenuItems = [[NSMutableArray alloc] init];
     }
     return _latestShowMenuItems;
-}
-
-- (NSMutableArray<LTMenuItem *> *)oldShowMenuItems
-{
-    if (!_oldShowMenuItems) {
-        self.oldShowMenuItems = [[NSMutableArray alloc] init];
-    }
-    return _oldShowMenuItems;
-}
-
-- (NSMutableArray<LTMenuItem *> *)selectedMenuItems
-{
-    if (!_selectedMenuItems) {
-        self.selectedMenuItems = [[NSMutableArray alloc] init];
-    }
-    return _selectedMenuItems;
 }
 
 #pragma mark - < 基本设置p >

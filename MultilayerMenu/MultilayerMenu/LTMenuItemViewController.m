@@ -23,6 +23,9 @@
 /** 以前需要展示的数据 */
 @property (nonatomic, strong) NSMutableArray<LTMenuItem *> *oldShowMenuItems;
 
+/** 已经选中的选项, 用于回调 */
+@property (nonatomic, strong) NSMutableArray<LTMenuItem *> *selectedMenuItems;
+
 /** 全选按钮 */
 @property (nonatomic, strong) UIButton *allBtn;
 
@@ -56,6 +59,14 @@ static NSString *LTMenuItemId = @"LTMenuItemCell";
     return _latestShowMenuItems;
 }
 
+- (NSMutableArray<LTMenuItem *> *)selectedMenuItems
+{
+    if (!_selectedMenuItems) {
+        self.selectedMenuItems = [[NSMutableArray alloc] init];
+    }
+    return _selectedMenuItems;
+}
+
 #pragma mark - < 基本设置p >
 
 - (void)setup
@@ -67,15 +78,24 @@ static NSString *LTMenuItemId = @"LTMenuItemCell";
     
     self.menuItems = [LTMenuItem mj_objectArrayWithKeyValuesArray:date];
     
+    UIButton *allBtn = [[UIButton alloc] init];
+    [allBtn setTitle:@"全选" forState:(UIControlStateNormal)];
+    [allBtn setTitle:@"反选" forState:(UIControlStateSelected)];
+    [allBtn setTitleColor:[UIColor blueColor] forState:(UIControlStateNormal)];
+    [allBtn sizeToFit];
+    allBtn.titleLabel.font = [UIFont systemFontOfSize:15];
+    [allBtn addTarget:self action:@selector(allBtnClick:) forControlEvents:(UIControlEventTouchUpInside)];
+    self.allBtn = allBtn;
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:allBtn];
+    
+    
     UIButton *btn = [[UIButton alloc] init];
-    [btn setTitle:@"全选" forState:(UIControlStateNormal)];
-    [btn setTitle:@"反选" forState:(UIControlStateSelected)];
+    [btn setTitle:@"打印已选" forState:(UIControlStateNormal)];
     [btn setTitleColor:[UIColor blueColor] forState:(UIControlStateNormal)];
     [btn sizeToFit];
     btn.titleLabel.font = [UIFont systemFontOfSize:15];
-    [btn addTarget:self action:@selector(allBtnClick:) forControlEvents:(UIControlEventTouchUpInside)];
-    self.allBtn = btn;
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
+    [btn addTarget:self action:@selector(printSelectedMenuItems:) forControlEvents:(UIControlEventTouchUpInside)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
     
     // 初始化需要展示的数据
     [self setupRowCount];
@@ -115,6 +135,31 @@ static NSString *LTMenuItemId = @"LTMenuItemCell";
         }
     }
     [self.tableView reloadData];
+}
+
+#pragma mark - < 选中数据 >
+
+- (void)printSelectedMenuItems:(UIButton *)sender
+{
+    [self.selectedMenuItems removeAllObjects];
+    [self departmentsWithMenuItems:self.menuItems];
+    NSLog(@"这里是全部选中数据\n%@", self.selectedMenuItems);
+}
+
+/**
+ 获取选中数据
+ */
+- (void)departmentsWithMenuItems:(NSArray<LTMenuItem *> *)menuItems
+{
+    for (int i = 0; i < menuItems.count; i++) {
+        LTMenuItem *menuItem = menuItems[i];
+        if (menuItem.isSelected) {
+            [self.selectedMenuItems addObject:menuItem];
+        }
+        if (menuItem.subs.count) {
+            [self departmentsWithMenuItems:menuItem.subs];
+        }
+    }
 }
 
 #pragma mark - < 添加可以展示的选项 >

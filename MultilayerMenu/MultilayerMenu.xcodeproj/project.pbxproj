@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		708088F72013138100CEEACD /* MJExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708088F82013138100CEEACD /* MJExtension.framework */; };
+		70B7151120130D76008C1F2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B7151020130D76008C1F2C /* AppDelegate.m */; };
+		70B7151920130D76008C1F2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70B7151820130D76008C1F2C /* Assets.xcassets */; };
+		70B7151F20130D76008C1F2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B7151E20130D76008C1F2C /* main.m */; };
+		70B7152720130DD6008C1F2C /* LTMenuItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B7152620130DD6008C1F2C /* LTMenuItemViewController.m */; };
+		70B7152A20130E38008C1F2C /* LTMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B7152920130E38008C1F2C /* LTMenuItem.m */; };
+		70B7152D20130E50008C1F2C /* LTMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B7152C20130E50008C1F2C /* LTMenuItemCell.m */; };
+		70B7153020131047008C1F2C /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B7152E20131047008C1F2C /* UIView+Extension.m */; };
+		70B715322013128E008C1F2C /* a.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70B715312013128E008C1F2C /* a.plist */; };
+		7593E36F18084F0E434FD53E /* Pods_MultilayerMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E939A91F9B55BC93F80A9FF4 /* Pods_MultilayerMenu.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4F1C8F8E093B5C1092FB5B49 /* Pods-MultilayerMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultilayerMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-MultilayerMenu/Pods-MultilayerMenu.release.xcconfig"; sourceTree = "<group>"; };
+		708088F82013138100CEEACD /* MJExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MJExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70B7150C20130D76008C1F2C /* MultilayerMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultilayerMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70B7150F20130D76008C1F2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		70B7151020130D76008C1F2C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		70B7151820130D76008C1F2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70B7151D20130D76008C1F2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70B7151E20130D76008C1F2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		70B7152520130DD6008C1F2C /* LTMenuItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTMenuItemViewController.h; sourceTree = "<group>"; };
+		70B7152620130DD6008C1F2C /* LTMenuItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTMenuItemViewController.m; sourceTree = "<group>"; };
+		70B7152820130E38008C1F2C /* LTMenuItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTMenuItem.h; sourceTree = "<group>"; };
+		70B7152920130E38008C1F2C /* LTMenuItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTMenuItem.m; sourceTree = "<group>"; };
+		70B7152B20130E4F008C1F2C /* LTMenuItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTMenuItemCell.h; sourceTree = "<group>"; };
+		70B7152C20130E50008C1F2C /* LTMenuItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTMenuItemCell.m; sourceTree = "<group>"; };
+		70B7152E20131047008C1F2C /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		70B7152F20131047008C1F2C /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		70B715312013128E008C1F2C /* a.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = a.plist; sourceTree = "<group>"; };
+		A85DB511438C439AB7E5A221 /* Pods-MultilayerMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultilayerMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MultilayerMenu/Pods-MultilayerMenu.debug.xcconfig"; sourceTree = "<group>"; };
+		E939A91F9B55BC93F80A9FF4 /* Pods_MultilayerMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultilayerMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70B7150920130D76008C1F2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				708088F72013138100CEEACD /* MJExtension.framework in Frameworks */,
+				7593E36F18084F0E434FD53E /* Pods_MultilayerMenu.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5942417E7C0581D8CE24F0AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A85DB511438C439AB7E5A221 /* Pods-MultilayerMenu.debug.xcconfig */,
+				4F1C8F8E093B5C1092FB5B49 /* Pods-MultilayerMenu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		70B7150320130D76008C1F2C = {
+			isa = PBXGroup;
+			children = (
+				70B7150E20130D76008C1F2C /* MultilayerMenu */,
+				70B7150D20130D76008C1F2C /* Products */,
+				5942417E7C0581D8CE24F0AD /* Pods */,
+				F25AB6589ACD2DCAB5EC94EB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		70B7150D20130D76008C1F2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70B7150C20130D76008C1F2C /* MultilayerMenu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70B7150E20130D76008C1F2C /* MultilayerMenu */ = {
+			isa = PBXGroup;
+			children = (
+				70B7150F20130D76008C1F2C /* AppDelegate.h */,
+				70B7151020130D76008C1F2C /* AppDelegate.m */,
+				70B7152520130DD6008C1F2C /* LTMenuItemViewController.h */,
+				70B7152620130DD6008C1F2C /* LTMenuItemViewController.m */,
+				70B7152820130E38008C1F2C /* LTMenuItem.h */,
+				70B7152920130E38008C1F2C /* LTMenuItem.m */,
+				70B7152B20130E4F008C1F2C /* LTMenuItemCell.h */,
+				70B7152C20130E50008C1F2C /* LTMenuItemCell.m */,
+				70B7152F20131047008C1F2C /* UIView+Extension.h */,
+				70B7152E20131047008C1F2C /* UIView+Extension.m */,
+				70B715312013128E008C1F2C /* a.plist */,
+				70B7151820130D76008C1F2C /* Assets.xcassets */,
+				70B7151D20130D76008C1F2C /* Info.plist */,
+				70B7151E20130D76008C1F2C /* main.m */,
+			);
+			path = MultilayerMenu;
+			sourceTree = "<group>";
+		};
+		F25AB6589ACD2DCAB5EC94EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				708088F82013138100CEEACD /* MJExtension.framework */,
+				E939A91F9B55BC93F80A9FF4 /* Pods_MultilayerMenu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70B7150B20130D76008C1F2C /* MultilayerMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70B7152220130D76008C1F2C /* Build configuration list for PBXNativeTarget "MultilayerMenu" */;
+			buildPhases = (
+				0E483BC3CA0521BCAC68A327 /* [CP] Check Pods Manifest.lock */,
+				70B7150820130D76008C1F2C /* Sources */,
+				70B7150920130D76008C1F2C /* Frameworks */,
+				70B7150A20130D76008C1F2C /* Resources */,
+				6812E536B464FF3FE893846D /* [CP] Embed Pods Frameworks */,
+				49E4BD4C1BF23DA7D016029E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultilayerMenu;
+			productName = MultilayerMenu;
+			productReference = 70B7150C20130D76008C1F2C /* MultilayerMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70B7150420130D76008C1F2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "冰凌天";
+				TargetAttributes = {
+					70B7150B20130D76008C1F2C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 70B7150720130D76008C1F2C /* Build configuration list for PBXProject "MultilayerMenu" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70B7150320130D76008C1F2C;
+			productRefGroup = 70B7150D20130D76008C1F2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70B7150B20130D76008C1F2C /* MultilayerMenu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70B7150A20130D76008C1F2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70B715322013128E008C1F2C /* a.plist in Resources */,
+				70B7151920130D76008C1F2C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E483BC3CA0521BCAC68A327 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		49E4BD4C1BF23DA7D016029E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MultilayerMenu/Pods-MultilayerMenu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6812E536B464FF3FE893846D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MultilayerMenu/Pods-MultilayerMenu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70B7150820130D76008C1F2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70B7153020131047008C1F2C /* UIView+Extension.m in Sources */,
+				70B7151F20130D76008C1F2C /* main.m in Sources */,
+				70B7151120130D76008C1F2C /* AppDelegate.m in Sources */,
+				70B7152720130DD6008C1F2C /* LTMenuItemViewController.m in Sources */,
+				70B7152D20130E50008C1F2C /* LTMenuItemCell.m in Sources */,
+				70B7152A20130E38008C1F2C /* LTMenuItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		70B7152020130D76008C1F2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		70B7152120130D76008C1F2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70B7152320130D76008C1F2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A85DB511438C439AB7E5A221 /* Pods-MultilayerMenu.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9G662QXGUR;
+				INFOPLIST_FILE = MultilayerMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blt.multilayerMenu.MultilayerMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70B7152420130D76008C1F2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F1C8F8E093B5C1092FB5B49 /* Pods-MultilayerMenu.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9G662QXGUR;
+				INFOPLIST_FILE = MultilayerMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blt.multilayerMenu.MultilayerMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70B7150720130D76008C1F2C /* Build configuration list for PBXProject "MultilayerMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70B7152020130D76008C1F2C /* Debug */,
+				70B7152120130D76008C1F2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70B7152220130D76008C1F2C /* Build configuration list for PBXNativeTarget "MultilayerMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70B7152320130D76008C1F2C /* Debug */,
+				70B7152420130D76008C1F2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70B7150420130D76008C1F2C /* Project object */;
+}

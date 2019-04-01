@@ -1,5 +1,5 @@
 # MultilayerMenu
-N级下拉菜单, 可进行无线层级的展开和闭合操作
+N级下拉菜单, 可进行无限层级的展开和闭合操作
 
 
 简书: https://www.jianshu.com/p/fc13e7810405
